@@ -1,0 +1,23 @@
+<odoo>
+
+
+    <record id="module_category_car_rental" model="ir.module.category">
+        <field name="name">Car Rental</field>
+        <field name="description">Car Rental Management</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <!-- User -->
+    <record id="group_car_rental_user" model="res.groups">
+        <field name="name">Car Rental User</field>
+    </record>
+
+    <!-- Admin -->
+    <record id="group_car_rental_admin" model="res.groups">
+        <field name="name">Car Rental Admin</field>
+        <field name="implied_ids" eval="[(4, ref('car_rental.group_car_rental_user'))]"/>
+    </record>
+
+
+
+</odoo>

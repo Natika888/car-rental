@@ -1,0 +1,387 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* car_rental
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-05 12:20+0000\n"
+"PO-Revision-Date: 2026-06-05 12:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: car_rental
+#: model:ir.actions.report,print_report_name:car_rental.action_report_car_rental
+msgid "'Car Rental"
+msgstr "'Оренда авто"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.report_car_rental_document
+msgid "<strong>Car:</strong>"
+msgstr "<strong>Авто:</strong>"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.report_car_rental_document
+msgid "<strong>Customer:</strong>"
+msgstr "<strong>Клієнт:</strong>"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.report_car_rental_document
+msgid "<strong>End Date:</strong>"
+msgstr "<strong>Дата завершення:</strong>"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.report_car_rental_document
+msgid "<strong>Pickup Location:</strong>"
+msgstr "<strong>Місце видачі:</strong>"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.report_car_rental_document
+msgid "<strong>Return Location:</strong>"
+msgstr "<strong>Місце повернення:</strong>"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.report_car_rental_document
+msgid "<strong>Start Date:</strong>"
+msgstr "<strong>Дата початку:</strong>"
+
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.report_car_rental_document
+msgid "<strong>Status:</strong>"
+msgstr "<strong>Статус:</strong>"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_rental_location__address
+msgid "Address"
+msgstr "Адреса"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.view_car_rental_status_wizard_form
+msgid "Apply"
+msgstr "Застосувати"
+
+#. module: car_rental
+#: model:product.template,name:car_rental.car_audi
+msgid "Audi A4"
+msgstr "Audi A4"
+
+#. module: car_rental
+#: model:ir.model.fields.selection,name:car_rental.selection__product_template__status__available
+msgid "Available"
+msgstr "Доступний"
+
+#. module: car_rental
+#: model:product.template,name:car_rental.car_bmw
+msgid "BMW X5"
+msgstr "BMW X5"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.view_car_rental_status_wizard_form
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__car_id
+msgid "Car"
+msgstr "Авто"
+
+#. module: car_rental
+#: model:ir.actions.act_window,name:car_rental.action_car_category
+msgid "Car Categories"
+msgstr "Категорії авто"
+
+#. module: car_rental
+#: model:ir.model,name:car_rental.model_car_category
+msgid "Car Category"
+msgstr "Категорія авто"
+
+#. module: car_rental
+#: model:ir.model,name:car_rental.model_car_rental
+#: model:ir.module.category,name:car_rental.module_category_car_rental
+#: model:ir.ui.menu,name:car_rental.menu_car_rental_root
+#: model_terms:ir.ui.view,arch_db:car_rental.report_car_rental_document
+#: model_terms:ir.ui.view,arch_db:car_rental.view_product_form_inherit_car
+msgid "Car Rental"
+msgstr "Оренда авто"
+
+#. module: car_rental
+#: model:res.groups,name:car_rental.group_car_rental_admin
+msgid "Car Rental Admin"
+msgstr "Адміністратор оренди авто"
+
+#. module: car_rental
+#: model:ir.module.category,description:car_rental.module_category_car_rental
+msgid "Car Rental Management"
+msgstr "Керування орендою авто"
+
+#. module: car_rental
+#: model:ir.actions.report,name:car_rental.action_report_car_rental
+msgid "Car Rental Report"
+msgstr "Звіт по оренді авто"
+
+#. module: car_rental
+#: model:res.groups,name:car_rental.group_car_rental_user
+msgid "Car Rental User"
+msgstr "Користувач оренди авто"
+
+
+#. module: car_rental
+#: model:ir.actions.act_window,name:car_rental.action_car_product
+#: model:ir.ui.menu,name:car_rental.menu_car_products
+msgid "Cars"
+msgstr "Авто"
+
+#. module: car_rental
+#: model:ir.ui.menu,name:car_rental.menu_car_category
+msgid "Categories"
+msgstr "Категорії"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_product_product__category_id
+#: model:ir.model.fields,field_description:car_rental.field_product_template__category_id
+msgid "Category"
+msgstr "Категорія"
+
+#. module: car_rental
+#: model:ir.model,name:car_rental.model_car_rental_status_wizard
+msgid "Change Rental Status Wizard"
+msgstr "Майстер зміни статусу оренди"
+
+#. module: car_rental
+#: model:ir.actions.act_window,name:car_rental.action_car_rental_status_wizard
+#: model:ir.actions.server,name:car_rental.action_open_wizard
+#: model_terms:ir.ui.view,arch_db:car_rental.view_car_rental_status_wizard_form
+msgid "Change Status"
+msgstr "Змінити статус"
+
+#. module: car_rental
+#: model:ir.model,name:car_rental.model_res_partner
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_category__create_uid
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__create_uid
+#: model:ir.model.fields,field_description:car_rental.field_car_rental_status_wizard__create_uid
+#: model:ir.model.fields,field_description:car_rental.field_rental_location__create_uid
+msgid "Created by"
+msgstr "Створено користувачем"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_category__create_date
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__create_date
+#: model:ir.model.fields,field_description:car_rental.field_car_rental_status_wizard__create_date
+#: model:ir.model.fields,field_description:car_rental.field_rental_location__create_date
+msgid "Created on"
+msgstr "Дата створення"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__customer_id
+msgid "Customer"
+msgstr "Клієнт"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__date_end
+msgid "Date End"
+msgstr "Дата завершення"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__date_start
+msgid "Date Start"
+msgstr "Дата початку"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_category__description
+msgid "Description"
+msgstr "Опис"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_category__display_name
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__display_name
+#: model:ir.model.fields,field_description:car_rental.field_car_rental_status_wizard__display_name
+#: model:ir.model.fields,field_description:car_rental.field_product_template__display_name
+#: model:ir.model.fields,field_description:car_rental.field_rental_location__display_name
+#: model:ir.model.fields,field_description:car_rental.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Відображуване ім’я"
+
+#. module: car_rental
+#: model:ir.model.fields.selection,name:car_rental.selection__car_rental__state__done
+#: model:ir.model.fields.selection,name:car_rental.selection__car_rental_status_wizard__state__done
+#: model_terms:ir.ui.view,arch_db:car_rental.view_car_rental_search
+msgid "Done"
+msgstr "Завершено"
+
+#. module: car_rental
+#: model:ir.model.fields.selection,name:car_rental.selection__car_rental__state__draft
+#: model:ir.model.fields.selection,name:car_rental.selection__car_rental_status_wizard__state__draft
+#: model_terms:ir.ui.view,arch_db:car_rental.view_car_rental_search
+msgid "Draft"
+msgstr "Чернетка"
+
+#. module: car_rental
+#: model:product.template,name:car_rental.car_hyundai
+msgid "Hyundai Tucson"
+msgstr "Hyundai Tucson"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_category__id
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__id
+#: model:ir.model.fields,field_description:car_rental.field_car_rental_status_wizard__id
+#: model:ir.model.fields,field_description:car_rental.field_product_template__id
+#: model:ir.model.fields,field_description:car_rental.field_rental_location__id
+#: model:ir.model.fields,field_description:car_rental.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+
+#. module: car_rental
+#: model:ir.model.fields.selection,name:car_rental.selection__product_template__status__service
+msgid "In Service"
+msgstr "На обслуговуванні"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_product_product__is_car
+#: model:ir.model.fields,field_description:car_rental.field_product_template__is_car
+msgid "Is Car"
+msgstr "Є автомобілем"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_res_partner__is_car_customer
+#: model:ir.model.fields,field_description:car_rental.field_res_users__is_car_customer
+msgid "Is Car Customer"
+msgstr "Клієнт оренди авто"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_category__write_uid
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__write_uid
+#: model:ir.model.fields,field_description:car_rental.field_car_rental_status_wizard__write_uid
+#: model:ir.model.fields,field_description:car_rental.field_rental_location__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення:"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_category__write_date
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__write_date
+#: model:ir.model.fields,field_description:car_rental.field_car_rental_status_wizard__write_date
+#: model:ir.model.fields,field_description:car_rental.field_rental_location__write_date
+msgid "Last Updated on"
+msgstr "Дата останнього оновлення"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_product_product__license_plate
+#: model:ir.model.fields,field_description:car_rental.field_product_template__license_plate
+msgid "License Plate"
+msgstr "Номер авто"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_product_product__location_id
+#: model:ir.model.fields,field_description:car_rental.field_product_template__location_id
+msgid "Location"
+msgstr "Локація"
+
+#. module: car_rental
+#: model:ir.actions.act_window,name:car_rental.action_rental_location
+#: model:ir.ui.menu,name:car_rental.menu_rental_location
+msgid "Locations"
+msgstr "Локації"
+
+#. module: car_rental
+#: model:product.template,name:car_rental.car_mercedes
+msgid "Mercedes-Benz C-Class"
+msgstr "Mercedes-Benz C-Class"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_category__name
+#: model:ir.model.fields,field_description:car_rental.field_rental_location__name
+msgid "Name"
+msgstr "Назва"
+
+#. module: car_rental
+#: model:ir.model.fields.selection,name:car_rental.selection__car_rental__state__ongoing
+#: model:ir.model.fields.selection,name:car_rental.selection__car_rental_status_wizard__state__ongoing
+#: model_terms:ir.ui.view,arch_db:car_rental.view_car_rental_search
+msgid "Ongoing"
+msgstr "В процесі"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__pickup_location_id
+msgid "Pickup Location"
+msgstr "Місце видачі"
+
+#. module: car_rental
+#: model:ir.model,name:car_rental.model_product_template
+msgid "Product"
+msgstr "Товар"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__rent_price
+#: model:ir.model.fields,field_description:car_rental.field_product_product__rent_price
+#: model:ir.model.fields,field_description:car_rental.field_product_template__rent_price
+msgid "Rent Price"
+msgstr "Ціна оренди"
+
+#. module: car_rental
+#: model:ir.model,name:car_rental.model_rental_location
+msgid "Rental Location"
+msgstr "Локація оренди"
+
+#. module: car_rental
+#: model:ir.actions.act_window,name:car_rental.action_car_rental
+#: model:ir.ui.menu,name:car_rental.menu_car_rental
+msgid "Rentals"
+msgstr "Оренди"
+
+#. module: car_rental
+#: model:ir.model.fields.selection,name:car_rental.selection__product_template__status__rented
+msgid "Rented"
+msgstr "Орендований"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__return_location_id
+msgid "Return Location"
+msgstr "Місце повернення"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.view_car_rental_kanban
+msgid "Start:"
+msgstr "Початок:"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_car_rental__state
+#: model:ir.model.fields,field_description:car_rental.field_car_rental_status_wizard__state
+msgid "State"
+msgstr "Стан"
+
+#. module: car_rental
+#: model:ir.model.fields,field_description:car_rental.field_product_product__status
+#: model:ir.model.fields,field_description:car_rental.field_product_template__status
+msgid "Status"
+msgstr "Статус"
+
+#. module: car_rental
+#: model_terms:ir.ui.view,arch_db:car_rental.view_car_rental_kanban
+msgid "Status:"
+msgstr "Статус:"
+
+#. module: car_rental
+#: model:product.template,name:car_rental.car_toyota
+msgid "Toyota RAV4"
+msgstr "Toyota RAV4"
+
+#. module: car_rental
+#: model:product.template,name:car_rental.car_volkswagen
+msgid "Volkswagen Golf"
+msgstr "Volkswagen Golf"
+
+#. module: car_rental
+#: model:rental.location,name:car_rental.location_kyiv
+msgid "Kyiv"
+msgstr "Київ"
+

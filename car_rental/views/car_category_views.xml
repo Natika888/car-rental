@@ -1,0 +1,26 @@
+<odoo>
+    <record id="view_car_category_list" model="ir.ui.view">
+        <field name="name">car.category.list</field>
+        <field name="model">car.category</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_car_category_form" model="ir.ui.view">
+        <field name="name">car.category.form</field>
+        <field name="model">car.category</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

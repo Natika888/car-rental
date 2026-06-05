@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_car_category,access_car_category,model_car_category,,1,1,1,1
+access_rental_location,access_rental_location,model_rental_location,,1,1,1,1
+access_car_rental,access_car_rental,model_car_rental,,1,1,1,1
+access_product_template_car,access_product_template_car,product.model_product_template,,1,1,1,1
+access_car_rental_status_wizard,access_car_rental_status_wizard,model_car_rental_status_wizard,,1,1,1,1
+access_car_category_user,car.category.user,model_car_category,car_rental.group_car_rental_user,1,0,0,0
+access_car_category_admin,car.category.admin,model_car_category,car_rental.group_car_rental_admin,1,1,1,1
+access_rental_location_user,rental.location.user,model_rental_location,car_rental.group_car_rental_user,1,0,0,0
+access_rental_location_admin,rental.location.admin,model_rental_location,car_rental.group_car_rental_admin,1,1,1,1
+access_car_rental_user,car.rental.user,model_car_rental,car_rental.group_car_rental_user,1,1,1,0
+access_car_rental_admin,car.rental.admin,model_car_rental,car_rental.group_car_rental_admin,1,1,1,1

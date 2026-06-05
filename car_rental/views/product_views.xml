@@ -1,0 +1,39 @@
+<odoo>
+
+    <record id="view_product_tree_inherit_car" model="ir.ui.view">
+        <field name="name">product.template.tree.car</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='list_price']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='list_price']" position="after">
+                <field name="rent_price"/>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_product_form_inherit_car" model="ir.ui.view">
+        <field name="name">product.template.form.car</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//sheet" position="inside">
+                <group string="Car Rental">
+                    <field name="is_car"/>
+                    <field name="category_id"/>
+                    <field name="license_plate"/>
+                    <field name="location_id"/>
+                    <field name="status"/>
+                    <field name="rent_price"/>
+                </group>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

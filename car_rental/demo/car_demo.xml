@@ -1,0 +1,74 @@
+<odoo>
+
+    <!-- CUSTOMERS -->
+    <record id="customer_1" model="res.partner">
+        <field name="name">Ivan Picul</field>
+    </record>
+
+    <record id="customer_2" model="res.partner">
+        <field name="name">Inna Smith</field>
+    </record>
+
+    <record id="customer_3" model="res.partner">
+        <field name="name">John Smith</field>
+    </record>
+
+
+    <!-- RENTALS -->
+    <record id="rental_1" model="car.rental">
+        <field name="customer_id" ref="customer_1"/>
+        <field name="car_id" ref="car_toyota"/>
+        <field name="pickup_location_id" ref="location_kyiv"/>
+        <field name="return_location_id" ref="location_lviv"/>
+        <field name="date_start">2026-06-01 10:00:00</field>
+        <field name="date_end">2026-06-03 10:00:00</field>
+        <field name="state">draft</field>
+    </record>
+
+    <record id="rental_2" model="car.rental">
+        <field name="customer_id" ref="customer_2"/>
+        <field name="car_id" ref="car_bmw"/>
+        <field name="pickup_location_id" ref="location_lviv"/>
+        <field name="return_location_id" ref="location_odessa"/>
+        <field name="date_start">2026-06-02 12:00:00</field>
+        <field name="date_end">2026-06-05 12:00:00</field>
+        <field name="state">ongoing</field>
+    </record>
+
+    <record id="rental_3" model="car.rental">
+        <field name="customer_id" ref="customer_3"/>
+        <field name="car_id" ref="car_audi"/>
+        <field name="pickup_location_id" ref="location_odessa"/>
+        <field name="return_location_id" ref="location_kyiv"/>
+        <field name="date_start">2026-06-01 09:00:00</field>
+        <field name="date_end">2026-06-04 09:00:00</field>
+        <field name="state">done</field>
+    </record>
+
+    <!--Cars-->
+
+    <record id="car_mercedes" model="product.template">
+        <field name="name">Mercedes-Benz C-Class</field>
+        <field name="is_car">True</field>
+        <field name="license_plate">DD3456DD</field>
+        <field name="status">available</field>
+        <field name="rent_price">50</field>
+    </record>
+
+    <record id="car_hyundai" model="product.template">
+        <field name="name">Hyundai Tucson</field>
+        <field name="is_car">True</field>
+        <field name="license_plate">EE7890EE</field>
+        <field name="status">available</field>
+        <field name="rent_price">50</field>
+    </record>
+
+    <record id="car_volkswagen" model="product.template">
+        <field name="name">Volkswagen Golf</field>
+        <field name="is_car">True</field>
+        <field name="license_plate">FF1122FF</field>
+        <field name="status">available</field>
+        <field name="rent_price">50</field>
+    </record>
+
+</odoo>

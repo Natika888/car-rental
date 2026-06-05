@@ -1,0 +1,59 @@
+<odoo>
+
+    <!-- CAR CATEGORIES -->
+    <record id="category_suv" model="car.category">
+        <field name="name">SUV</field>
+    </record>
+
+    <record id="category_sedan" model="car.category">
+        <field name="name">Sedan</field>
+    </record>
+
+    <record id="category_hatchback" model="car.category">
+        <field name="name">Hatchback</field>
+    </record>
+
+
+    <!-- LOCATIONS -->
+    <record id="location_kyiv" model="rental.location">
+        <field name="name">Kyiv</field>
+        <field name="address">Khreshchatyk St, 1</field>
+    </record>
+
+    <record id="location_lviv" model="rental.location">
+        <field name="name">Lviv</field>
+        <field name="address">Svobody Ave, 10</field>
+    </record>
+
+    <record id="location_odessa" model="rental.location">
+        <field name="name">Odessa</field>
+        <field name="address">Deribasivska St, 5</field>
+    </record>
+
+
+    <!-- CARS (product.template) -->
+    <record id="car_toyota" model="product.template">
+        <field name="name">Toyota RAV4</field>
+        <field name="is_car">True</field>
+        <field name="license_plate">AA1234AA</field>
+        <field name="status">available</field>
+        <field name="rent_price">50</field>
+    </record>
+
+    <record id="car_bmw" model="product.template">
+        <field name="name">BMW X5</field>
+        <field name="is_car">True</field>
+        <field name="license_plate">BB5678BB</field>
+        <field name="status">available</field>
+        <field name="rent_price">50</field>
+    </record>
+
+    <record id="car_audi" model="product.template">
+        <field name="name">Audi A4</field>
+        <field name="is_car">True</field>
+        <field name="license_plate">CC9012CC</field>
+        <field name="status">available</field>
+        <field name="rent_price">50</field>
+    </record>
+
+</odoo>

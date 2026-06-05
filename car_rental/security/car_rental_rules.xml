@@ -1,0 +1,21 @@
+<odoo>
+
+    <record id="car_rental_user_rule" model="ir.rule">
+        <field name="name">User sees own rentals</field>
+        <field name="model_id" ref="model_car_rental"/>
+        <field name="groups" eval="[(4, ref('car_rental.group_car_rental_user'))]"/>
+        <field name="domain_force">
+            ['|', ('customer_id', '=', user.partner_id.id), ('id', '=', False)]
+        </field>
+    </record>
+
+    <record id="car_rental_admin_rule" model="ir.rule">
+        <field name="name">Admin sees all rentals</field>
+        <field name="model_id" ref="model_car_rental"/>
+        <field name="groups" eval="[(4, ref('car_rental.group_car_rental_admin'))]"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+    </record>
+
+
+</odoo>
+

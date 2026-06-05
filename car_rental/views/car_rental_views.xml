@@ -1,0 +1,103 @@
+<odoo>
+    <record id="view_car_rental_list" model="ir.ui.view">
+        <field name="name">car.rental.list</field>
+        <field name="model">car.rental</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="customer_id"/>
+                <field name="car_id"/>
+                <field name="pickup_location_id"/>
+                <field name="return_location_id"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_car_rental_form" model="ir.ui.view">
+        <field name="name">car.rental.form</field>
+        <field name="model">car.rental</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="customer_id"
+                               readonly="id != False"/>
+                        <field name="car_id"/>
+                        <field name="pickup_location_id"/>
+                        <field name="return_location_id"/>
+                        <field name="date_start"/>
+                        <field name="date_end"/>
+                        <field name="state"/>
+                        <field name="rent_price" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_open_wizard" model="ir.actions.server">
+        <field name="name">Change Status</field>
+        <field name="model_id" ref="model_car_rental"/>
+        <field name="binding_model_id" ref="model_car_rental"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+            action = {
+            'type': 'ir.actions.act_window',
+            'res_model': 'car.rental.status.wizard',
+            'view_mode': 'form',
+            'target': 'new',
+            'context': {'active_ids': records.ids},
+            }
+        </field>
+    </record>
+
+    <record id="view_car_rental_search" model="ir.ui.view">
+        <field name="name">car.rental.search</field>
+        <field name="model">car.rental</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="customer_id"/>
+                <field name="car_id"/>
+                <field name="state"/>
+
+                <filter name="filter_draft" string="Draft" domain="[('state','=','draft')]"/>
+                <filter name="filter_ongoing" string="Ongoing" domain="[('state','=','ongoing')]"/>
+                <filter name="filter_done" string="Done" domain="[('state','=','done')]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_car_rental_kanban" model="ir.ui.view">
+        <field name="name">car.rental.kanban</field>
+        <field name="model">car.rental</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state">
+                <field name="customer_id"/>
+                <field name="car_id"/>
+                <field name="date_start"/>
+                <field name="state"/>
+
+                <templates>
+                    <t t-name="card">
+                        <div class="oe_kanban_card">
+                            <strong>
+                                <field name="customer_id"/>
+                            </strong>
+                            <div>
+                                <field name="car_id"/>
+                            </div>
+                            <div>Start:
+                                <field name="date_start"/>
+                            </div>
+                            <div>Status:
+                                <field name="state"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+</odoo>
